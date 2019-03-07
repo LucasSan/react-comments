@@ -11,7 +11,7 @@ it('should render', () => {
         comment: 'comentario'
     }
     const wrapper = render(<Comment c={ c } />)
-    expect(wrapper.text()).toBe('Comentário: comentario');
+    expect(wrapper.text()).toBe('comentarioEnviado por: vazio');
 });
 
 it('should render vazio', () => {
@@ -19,5 +19,5 @@ it('should render vazio', () => {
         comment: ''
     }
     const wrapper = render(<Comment c={ c } />)
-    expect(wrapper.text()).toBe('Comentário: vazio');
+    expect(wrapper.text()).toBe('vazioEnviado por: vazio');
 });
